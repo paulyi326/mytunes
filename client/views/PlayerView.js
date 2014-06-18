@@ -22,7 +22,7 @@ var PlayerView = Backbone.View.extend({
   },
 
   ended: function () {
-    this.model.trigger('ended');
+    this.model.ended();
   }
 
 });
