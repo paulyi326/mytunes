@@ -12,7 +12,7 @@ var LibraryView = Backbone.View.extend({
     // see http://api.jquery.com/detach/
     this.$el.children().detach();
 
-    this.$el.html('<tr><td>Library</td><td></td><td></td><td>Plays</td><td>Upvotes</td><td>Downvotes</td></tr>').append(
+    this.$el.html('<tr><td><strong>Library</strong></td><td></td><td></td><td></td><td></td><td>Plays</td><td>Upvotes</td><td>Downvotes</td></tr>').append(
       this.collection.map(function(song){
         return new LibraryEntryView({model: song}).render();
       })

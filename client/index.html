@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
   <style>
-    tr {
-      cursor: pointer;
-    }
   </style>
   <body>
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+
+    <style>
+      .artist {
+        width: 100px;
+      }
+      .title {
+        width: 300px;
+      }
+      td {
+        padding: 0.5em;
+      }
+      table {
+        border-bottom: 1px solid #ccc;
+      }
+      .playCount, .upvotes, .downvotes {
+        text-align: center;
+      }
+    </style>
+
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
     <script src="bower_components/jquery/jquery.min.js"></script>
